@@ -1,0 +1,799 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18.5824px;
+    line-height: 33.4483px;
+    color: rgb(65, 65, 63);
+    background-color: rgb(243, 240, 232);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+}
+
+.video-overlay {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.video-background {
+    filter: brightness(0.604);
+}
+
+
+/* Hero section styling */
+
+.hero-section {
+    height: 600px;
+    position: relative;
+}
+
+
+/* Hero text styling to match original fonts */
+
+.hero-main-title {
+    font-family: freight-display-pro, serif;
+    font-size: 54.736px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: white;
+    margin-bottom: 0.5rem;
+    white-space: pre-wrap;
+}
+
+.hero-subtitle {
+    font-family: freight-display-pro, serif;
+    font-size: 23.7472px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+
+/* Button styling to match original - exact shape from provided code */
+
+.consultation-button,
+.sqs-block-button-element--medium.sqs-button-element--primary.sqs-block-button-element {
+    background-color: #F3F0E8;
+    color: #41413F;
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    border-radius: 6.4px;
+    padding: 1em 2.2em;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: 1;
+}
+
+.consultation-button:hover,
+.sqs-block-button-element--medium.sqs-button-element--primary.sqs-block-button-element:hover {
+    background-color: rgba(243, 240, 232, 0.9);
+    transform: translateY(-1px);
+}
+
+
+/* Button container styling to match original */
+
+.sqs-block-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sqs-block-button-container--center {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .consultation-button,
+    .sqs-block-button-element--medium.sqs-button-element--primary.sqs-block-button-element {
+        font-size: 0.875rem;
+        padding: 1em 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* HR Divider styling */
+
+.hr-divider-section {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section-hr {
+    border: none;
+    height: 1px;
+    background-color: #d1d5db;
+    margin: 0;
+}
+
+
+/* Content sections */
+
+.content-section {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    font-family: freight-display-pro, serif;
+    font-size: 39.2416px;
+    font-weight: 300;
+    color: #41413F;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.subsection-title {
+    font-family: freight-display-pro, serif;
+    font-size: 23.7472px;
+    font-weight: 300;
+    color: #7E7E6B;
+    margin-bottom: 1rem;
+}
+
+
+/* About section layout matching screenshots */
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    padding-right: 2rem;
+}
+
+.about-text p {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    color: #7E7E6B;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.therapist-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Quote section styling */
+
+.quote-section {
+    background-color: rgb(243, 240, 232);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.quote-text {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 39.2416px;
+    line-height: 1.4;
+    color: #41413F;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-weight: 300;
+    padding: 35.508px 0px;
+}
+
+.quote-description {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    line-height: 1.6;
+    color: #41413F;
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+
+/* Inspirational quote styling */
+
+.inspirational-quote-text {
+    font-family: freight-display-pro, serif;
+    font-size: 31.4944px;
+    line-height: 1.4;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    font-weight: 300;
+}
+
+.quote-author {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    color: white;
+    font-style: italic;
+    margin: 16px auto 0;
+}
+
+
+/* Areas of Focus section */
+
+.areas-section {
+    background-color: rgb(243, 240, 232);
+    padding: 6rem 2rem;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.area-card {
+    text-align: center;
+}
+
+.area-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.area-title {
+    font-family: freight-display-pro, serif;
+    font-size: 23.7472px;
+    font-weight: 300;
+    color: #41413F;
+    margin-bottom: 1rem;
+}
+
+.area-description {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #41413F;
+}
+
+
+/* FAQ Section */
+
+.faq-section {
+    background-color: rgb(243, 240, 232);
+    padding: 6rem 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    font-family: freight-display-pro, serif;
+    font-size: 39.2416px;
+    font-weight: 300;
+    color: #41413F;
+    margin-bottom: 2rem;
+}
+
+.faq-list {
+    space-y: 1rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #3f4a3f;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(155, 185, 187, 0.1);
+}
+
+.faq-question.open {
+    background-color: rgba(155, 185, 187, 0.15);
+}
+
+.faq-question-text {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    color: #9bb9bb;
+}
+
+.faq-chevron {
+    transition: transform 0.3s ease;
+}
+
+.faq-chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.open {
+    max-height: 500px;
+}
+
+.faq-answer-content {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.faq-answer-content p {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(65, 65, 63);
+    margin: 0;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    background-color: rgb(243, 240, 232);
+    padding: 6rem 2rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-intro-text {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    line-height: 1.6;
+    color: #41413F;
+    margin: 0;
+}
+
+.contact-title {
+    font-family: freight-display-pro, serif;
+    font-size: 39.2416px;
+    font-weight: 300;
+    color: #41413F;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-success {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-success-message {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    line-height: 1.6;
+    color: #41413F;
+    margin-bottom: 2rem;
+}
+
+.contact-reset-button {
+    background-color: #9bb9bb;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-reset-button:hover {
+    background-color: rgba(155, 185, 187, 0.9);
+}
+
+
+/* Background image section with quote overlay */
+
+.section-border {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.section-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.section-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+    z-index: 1;
+}
+
+
+/* Rates section */
+
+.rates-section {
+    background-color: #a8b8b8;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #3f4a3f;
+}
+
+.rates-title {
+    font-family: freight-display-pro, serif;
+    font-size: 31.4944px;
+    font-weight: 300;
+    margin: 0px 0px 32px;
+}
+
+.rate-item {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    margin: 16px 0px;
+}
+
+.rate-description {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18.5824px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+
+/* Status section */
+
+.status-section {
+    background-color: rgb(243, 240, 232);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.status-text {
+    font-family: freight-display-pro, serif;
+    font-size: 23.7472px;
+    font-weight: 300;
+    color: #41413F;
+}
+
+
+/* Final contact section */
+
+.final-contact-section {
+    background-color: rgb(243, 240, 232);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.final-contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3f4a3f;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+
+.final-contact-info {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(65, 65, 63);
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+
+.final-contact-info a {
+    color: rgb(65, 65, 63);
+    text-decoration: none;
+}
+
+.final-contact-info a:hover {
+    text-decoration: underline;
+}
+
+.final-contact-address {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(65, 65, 63);
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+
+.final-contact-links {
+    font-size: 0.875rem;
+    color: rgb(65, 65, 63);
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+
+.final-contact-links a {
+    color: rgb(65, 65, 63);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.final-contact-links a:hover {
+    text-decoration: underline;
+}
+
+.final-contact-portal {
+    font-size: 1rem;
+    color: rgb(65, 65, 63);
+    white-space: pre-wrap;
+}
+
+.final-contact-portal a {
+    color: rgb(65, 65, 63);
+    text-decoration: none;
+}
+
+.final-contact-portal a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact info section */
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact form styling */
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 400;
+    color: #3f4a3f;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.checkbox-label {
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: freight-sans-pro, sans-serif;
+    color: #41413F;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #9bb9bb;
+    box-shadow: 0 0 0 3px rgba(155, 185, 187, 0.1);
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-help-text {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.checkbox-input {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.form-submit-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    background-color: #9bb9bb;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: freight-sans-pro, sans-serif;
+}
+
+.submit-button:hover {
+    background-color: rgba(155, 185, 187, 0.9);
+}
+
+.submit-button:disabled {
+    background-color: #d1d5db;
+    cursor: not-allowed;
+}
+
+.form-disclaimer {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.disclaimer-text {
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    font-family: freight-sans-pro, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .about-text {
+        padding-right: 0;
+    }
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .areas-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .quote-text {
+        font-size: 1.8rem;
+    }
+    .inspirational-quote-text {
+        font-size: 1.5rem;
+    }
+    .final-contact-title {
+        font-size: 1.25rem;
+    }
+    .section-border {
+        height: 300px;
+    }
+    .consultation-button,
+    .sqs-block-button-element--medium.sqs-button-element--primary.sqs-block-button-element {
+        padding: 1em 2.2em;
+    }
+    .faq-question {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .faq-answer-content {
+        padding: 0 1rem 1rem;
+    }
+    .faq-category {
+        font-size: 1.5rem;
+    }
+    .contact-form {
+        padding: 1.5rem;
+    }
+    .contact-container {
+        padding: 0 1rem;
+    }
+}

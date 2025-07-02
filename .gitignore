@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+dist/
+out/
+
+# Environment
+.env*
+*.log
+
+# Editor/OS files
+.vscode/
+.DS_Store
+
+# Large assets
+public/videos/ocean.mp4
